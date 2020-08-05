@@ -1,0 +1,447 @@
+@import
+ url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+@import
+url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+ *{
+     box-sizing: border-box;
+     transition: all ease-in-out 250ms;
+ }
+
+ #cursive{
+    font-family: 'Dancing Script', cursive;
+ }
+
+ body{
+     margin: 0;
+     font-family: 'Raleway',sans-serif;
+     text-align: center;
+ }
+
+ header{
+     position: absolute;
+     margin-top: 1em;
+     left: 0;
+     right: 0;
+ }
+
+ p{
+     line-height: 1.2em;
+ }
+
+ img{
+     max-width: 100%;
+     height: auto;
+ }
+
+ .container{
+     width: 95%;
+     margin: 0 auto;
+     max-width: 70em;
+ }
+
+ .clearfix::after,
+ footer::after,
+ section::after{
+     content: ' ';
+     display: block;
+     clear: both;
+ }
+
+ nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin: 1em;
+}
+
+nav a{
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding: 1em;
+    color: #FFF;
+   /* background-color: orangered;*/
+}
+
+@media(min-width:60rem){
+    nav{
+        float: right;
+    }
+}
+
+h1{
+    font-size: 2rem;
+    top: 4em;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 1500;
+   
+}
+.title span{
+    font-weight: 500;
+    display: block;
+    font-size: 0.8em;
+}
+
+@media(min-width:60rem){
+    .title{
+        font-size: 4rem;
+    }
+}
+
+.index-first{
+    background-image: url(./background-1.jpg);
+    padding: 15em;
+    color: #FFF;
+    background-size: cover;
+    background-position: center;
+}
+/*
+@media(min-width: 60rem){
+    .index-first{
+        height: 100vh;
+        padding-top: 27vh;
+    }
+}
+*/
+
+@media(min-width: 60rem){
+    .index-first{
+        padding: 9em;
+    }
+}
+
+nav a:hover,
+nav a:focus{
+    color: #DDD;
+    padding: 1em;
+}
+
+/*----------------buttons----------------------------------------------------------------*/
+
+
+.button{
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: 0.5em 1.5em;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/*---------------------------html form-------------------------------------------------------------*/
+
+ td{
+     padding: 0.8em;
+     width: 10em;
+     font-weight: bold;
+ }
+
+ #input{
+     width: 15em;
+     height: 2.5em;
+ }
+
+
+/*------------------------------------------------------------------------------------------------*/
+
+.work{
+    background-color: rgb(2, 26, 37);
+    color: burlywood;
+    padding: 1em;
+    font-size: 2.3rem;
+    margin-top: -0.05em;
+    outline: 2px solid chocolate;
+    outline: 2px solid chocolate;
+    outline-offset: -0.5em;
+}
+
+/*---------------CARD-------------------------------------------*/
+
+
+
+.portfolio{
+   background-color: snow;
+   margin: -1em 0 0;
+}
+
+.port-item{
+    margin: 0;
+    position: relative;
+}
+
+.port-item img{
+    display: block;
+}
+
+.port-desc{
+    position: absolute;
+    z-index: 500;
+    bottom: 0em;
+    left: 0em;
+    right: 0em;
+    color: white;
+    background: rgba(0,0,0,0.55);
+    padding: 0.2em;
+    font-size: 2em;
+}
+
+@media(min-width: 33rem){
+    .port-item{
+        width: 50%;
+        float: left;
+    }
+}
+
+@media(min-width: 60rem){
+    .port-item{
+        width: 33.33333334%;
+        overflow: hidden;
+    }
+
+    .port-desc{
+        transform: translateY(150%);
+    }
+
+    .port-item:hover  .port-desc{
+        transform: translateY(0%);
+    }
+}
+
+
+
+
+
+/*---------------------------POPUP  PORTFOLIO----------------------------------------------*/
+
+
+
+
+
+
+
+.box {
+    width: 40%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.2);
+    padding: 35px;
+    border: 2px solid #fff;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+  }
+  
+  .button:hover {
+    background: #06D85F;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 2s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content {
+    max-height: 50%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------*/
+
+
+.blank{
+    height: 2.5em;
+    background-color: snow;
+}
+
+
+
+/*--------------------------------------------------------*/
+/*-----------------------------------------------------*/
+
+.cta{
+    background-image: url(./food-parr2.jpg);
+    background-attachment: fixed;
+    color: #FFF;
+    height: 19rem;
+    background-size: cover;
+    padding: 1.8em;
+    background-position: center;
+}
+
+
+
+
+
+.unstyled-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer{
+    background-color: #232323;
+    color: #FFF;
+    margin-top: -0.04em;
+    text-align: left;
+    padding: 5em 0;
+}
+
+[class^=col-]{
+    float: left;
+    padding: 0.5em;
+    width: 100%;
+    margin-top: 1em;
+}
+
+[class^=col]:first-child{
+    margin-top: 0;
+}
+
+.col-1{
+    width: 33.3333334%;
+    float: left;
+}
+
+
+@media(min-width: 40rem){
+
+    
+[class^=col-]{
+    float: left;
+    padding: 0.5em;
+    margin-top: 0;
+}
+
+    [class^=col]:first-child{
+        padding-left: 0;
+    }
+    
+    
+    [class^=col]:last-child{
+        padding-right: 0;
+    }
+
+.col-3{
+    width: 50%;
+}
+
+.col-1{
+    width: 16.6666%;
+    float: left;
+}
+}
+
+/*-------------------social media icons------------------------------------*/
+
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  /*instagram*/
+  .fa-instagram{
+      /*background-color: rgb(240, 84, 45);*/
+      background: -webkit-linear-gradient(left top, blue, blue);
+      background: -o-linear-gradient(bottom right, blue, blue);
+      background: -moz-linear-gradient(bottom right, blue, purple);
+      background: linear-gradient(to bottom left, blue, rgb(177, 10, 113), orange);
+      color: #FFF;
+  }
+
+  /*linkedin*/
+  .fa-linkedin{
+      background-color: rgb(0, 122, 216);
+      color: #FFF;
+  }
+
+  /*--------------------------------------------------------------------------------------*/

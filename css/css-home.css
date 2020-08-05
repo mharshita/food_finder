@@ -1,0 +1,195 @@
+@import
+ url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+ *{
+     box-sizing: border-box;
+     transition: all ease-in-out 250ms;
+  }
+
+ body{
+     margin: 0;
+     font-family: 'Raleway',sans-serif;
+     text-align: center;
+    }
+
+    nav{
+        background-color: rgb(2, 26, 37);
+        width: 100%;
+    }
+
+
+    nav ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    nav li{
+        /*display: inline-block;*/
+        margin: 1em;
+        float: right;
+    }
+    
+    nav a{
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        padding: 1em;
+        color: #FFF;
+    }
+    
+    @media(min-width:60rem){
+        nav{
+            float: right;
+        }
+    }
+
+    .nav-li:hover{
+      background-color: #4CAF50;
+      padding: 16px;
+    }
+
+    /*--------------dropdowm-----------------------------------------------------*/
+    /* Style The Dropdown Button */
+  .dropbtn {
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  /*margin-left: 59em;*/
+  margin-left: 57em;
+}
+
+.dropbtn:hover{
+  background-color: #4CAF50;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 3.1em;
+  margin-left: 52.5em;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #baeeb1; color: rgb(11, 124, 11);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+  /*-------------------------------------------------------------------------------*/
+
+
+
+    /*-----------------card-----------------------------------------------*/
+   .portfolio{
+    padding: 5em;
+   }
+   
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        /*max-width: 20em;*/
+        width: 40%;
+        height: 48%;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+        margin-top: 2em;
+        margin-left: 1em;
+        float: left;
+        margin-right: 6em;
+      }
+
+      .card:hover{
+         border-style: solid;
+         border-color: transparent;
+      }
+
+      .card1 {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        /*max-width: 20em;*/
+        width: 40%;
+        height: 48%;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+        margin-top: 18em;
+        margin-left: 1em;
+        float: left;
+        margin-right: 6em;
+      }
+
+      .card1:hover{
+        border-style: solid;
+        border-color: transparent;
+      }
+
+      
+      .price {
+        color: grey;
+        font-size: 22px;
+      }
+      
+      .button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+        text-decoration: none;
+      }
+
+      .button1 {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+        margin-bottom: 2em;
+        text-decoration: none;
+      }
+      
+      .button:hover {
+        /*opacity: 0.7;*/
+        background-color: #4CAF50;
+      }
+
+      .button1:hover {
+        /*opacity: 0.7;*/
+        background-color: #4CAF50;
+      }
+    /*--------------------------------------------------------------------------*/
+
