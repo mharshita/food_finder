@@ -1,0 +1,60 @@
+@import
+ url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+ @import
+url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+ *{
+     /*box-sizing: border-box;*/
+     transition: all ease-in-out 250ms;
+  }
+
+ body{
+     margin: 0;
+     font-family: 'Raleway',sans-serif;
+     text-align: center;
+    }
+
+    nav{
+        background-color: rgb(2, 26, 37);
+        width: 100%;
+        margin-top: -1.5em;
+    }
+
+
+    nav ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    nav li{
+        /*display: inline-block;*/
+        margin: 1em;
+        float: right;
+    }
+    
+    nav a{
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        padding: 1em;
+        color: #FFF;
+    }
+    
+    @media(min-width:60rem){
+        nav{
+            float: right;
+            margin-top: -3.3em;
+        }
+    }
+
+    .nav-li:hover{
+      background-color: #4CAF50;
+      padding: 16px;
+    }
+
+    .top{
+        font-size: 5em;
+    }

@@ -10,11 +10,24 @@ include("connection.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MENU</title>
-    <link rel="stylesheet" href="menu-css.css" type="text/css">
+    <link rel="stylesheet" href="css/menu-css.css" type="text/css">
 </head>
 
 <body>
 
+<header>
+<nav>
+
+    <ul>
+        <li><a href="logout.php" class="nav-li">LOGOUT</a></li>
+        <li><a href="" class="nav-li">CART</a></li>
+        <li><a href="profile.php" class="nav-li">PROFILE</a></li>
+    </ul>
+
+</nav>
+</header>
+
+<h1 class="top">MENU</h1>
 <?php
         $q = ("SELECT resturant,item FROM menu WHERE resturant = 'Resturant 4' ");
         $result = mysqli_query($con,$q);
