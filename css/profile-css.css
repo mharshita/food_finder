@@ -100,3 +100,88 @@ nav a{
  .main-head{
      margin-top: 5rem;
  }
+
+ /*-----------------typewriter effect----------------------------------------------*/
+
+ @keyframes text2 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    
+    55%, 80% {
+      width: 8.2em;
+    }
+  }
+
+ @keyframes text1 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    10%, 20% {
+      width: 4.8em;
+    }
+  }
+
+  .text_1 {
+    animation: text1;
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  .text_2 {
+    animation: text2;
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  
+  .text_1, .text_2 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 10s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+  }
+  .text_1::after, .text_2::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(1, end);
+  }
+
+  /*-------------------------------------------------------------------------*/
+
+  .button{
+    /*font-size: 1.5rem;*/
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: 0.5em 1.5em;
+    display: inline-block;
+    cursor: pointer;
+}
+
+  button-small{
+    font-size: 0.5rem;
+    font-weight: 700;
+}
+
+.button-accent{
+    color: #42b924;
+    border-color: #00ff6c;
+}
+
+.button-accent:hover,
+.button-accent:focus{
+    background: #00ff6c;
+    color: #232323;
+}
+
+@media(min-width: 60rem){
+   .button{
+       font-size: 1.2rem;
+   }
+}

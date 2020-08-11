@@ -18,6 +18,16 @@ include("connection.php");
     <div class="column side-bar">
         <h1 class="side-head">Food Finder</h1>
         <p class="side-tag">delivering the best food at your doorstep :)</p>
+</br></br>
+        <h1>
+ <span class="text_1">Hungry?</span>
+<span class="text_2">Order food now!!</span>
+</h1>
+</br></br>
+<a href="home.php" class="button button-accent button-small">Order Now</a>
+</br></br>
+<a href="home.php" class="button button-accent button-small">Rate & Review</a> </br>
+
     </div>
     <div class="column main-page">
 
