@@ -99,6 +99,9 @@ nav a{
 
  .main-head{
      margin-top: 5rem;
+     font-weight: bold;
+     font-size: 4.5em;
+     color: rgb(106, 207, 4);
  }
 
  /*-----------------typewriter effect----------------------------------------------*/
@@ -184,4 +187,16 @@ nav a{
    .button{
        font-size: 1.2rem;
    }
+}
+
+table{
+  margin-left: 13rem;
+  background-color: rgb(157, 250, 164);
+}
+
+td{
+  font-weight: bold;
+  font-size: 2em;
+  padding: 0.8em;
+  text-align: left;
 }
