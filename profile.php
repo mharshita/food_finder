@@ -38,7 +38,7 @@ include("connection.php");
             <ul>
            
                 <li><a href="logout.php" class="nav-li">LOGOUT</a></li>
-                <li><a href="" class="nav-li">CART</a></li>
+                <li><a href="cart.php" class="nav-li">CART</a></li>
                 <li><a href="home.php" class="nav-li">HOME</a></li>
               
             </ul>

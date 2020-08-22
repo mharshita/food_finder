@@ -40,7 +40,7 @@ include("connection.php");
                 </div>
 
                 <li><a href="profile.php" class="nav-li">PROFILE</a></li>
-                <li><a href="" class="nav-li">CART</a></li>
+                <li><a href="cart.php" class="nav-li">CART</a></li>
               
             </ul>
             

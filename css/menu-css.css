@@ -18,7 +18,7 @@ url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
     nav{
         background-color: rgb(2, 26, 37);
         width: 100%;
-        margin-top: -1.5em;
+        /*margin-top: -1.5em;*/
     }
 
 
@@ -46,7 +46,6 @@ url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
     @media(min-width:60rem){
         nav{
             float: right;
-            margin-top: -3.3em;
         }
     }
 
@@ -57,4 +56,134 @@ url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
     .top{
         font-size: 5em;
+        color: rgb(106, 207, 4);
     }
+
+    .row{
+        display: flex;
+    }
+   
+    .column{
+        float: left;
+    }
+   
+    .side-bar{
+        width: 30%;
+        background-color: rgb(230, 222, 222);
+    }
+   
+    .main-page{
+        width: 70%;
+    }
+   
+    /*header{
+       position: absolute;
+       margin-top: 1em;
+       left: 0;
+       right: 0;
+   }*/
+
+   .side-head{
+    color: #42b924;
+    font-weight: bold;
+    font-size: 5rem;
+ }
+
+ .side-tag{
+    font-family: 'Dancing Script', cursive;
+    color: #42b924;
+    font-weight: bold;
+    font-size: 2em;
+ }
+
+ .main-head{
+     margin-top: 5rem;
+     font-weight: bold;
+     font-size: 4.5em;
+     color: rgb(106, 207, 4);
+ }
+
+ /*-----------------typewriter effect----------------------------------------------*/
+
+ @keyframes text2 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    
+    55%, 80% {
+      width: 8.2em;
+    }
+  }
+
+ @keyframes text1 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    10%, 20% {
+      width: 7.8em;
+    }
+  }
+
+  .text_1 {
+    animation: text1;
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  .text_2 {
+    animation: text2;
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  
+  .text_1, .text_2 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 10s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+  }
+  .text_1::after, .text_2::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(1, end);
+  }
+
+  /*-------------------------------------------------------------------------*/
+
+  .button{
+    /*font-size: 1.5rem;*/
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: 0.5em 1.5em;
+    display: inline-block;
+    cursor: pointer;
+}
+
+  button-small{
+    font-size: 0.5rem;
+    font-weight: 700;
+}
+
+.button-accent{
+    color: #42b924;
+    border-color: #00ff6c;
+}
+
+.button-accent:hover,
+.button-accent:focus{
+    background: #00ff6c;
+    color: #232323;
+}
+
+@media(min-width: 60rem){
+   .button{
+       font-size: 1.2rem;
+   }
+}
