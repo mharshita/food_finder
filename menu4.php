@@ -51,7 +51,7 @@ include("connection.php");
 
 <h1 class="top">MENU</h1>
 <?php
-        $q = ("SELECT resturant,item,price FROM menu WHERE resturant = 'Resturant 4' ");
+        $q = ("SELECT resturant,item,price,food_type FROM menu WHERE resturant = 'Resturant 4' ");
         $result = mysqli_query($con,$q);
         $num = mysqli_num_rows($result);
     
@@ -59,11 +59,115 @@ include("connection.php");
     {
         $row = mysqli_fetch_array($result);
     ?>
-    <?php  echo $row['resturant']; ?>
-    <?php echo $row['item'];?> 
-    <?php echo $row['price'] ?>
-    </br>
-    <?php }  ?>
-    </div>
+
+<!-- CARD 1 -->
+<?php if($i == 1) { ?>
+
+<div class="row">
+<div class="card1">
+
+<div class="column image">
+<p>this portion is for image</p>
+</div>
+
+<div class="column content">
+
+<h1 class="card-head"> <strong><?php echo $row['item'];?></strong> </h1>
+
+<p class="card-data"><strong>Resturant: </strong><?php  echo $row['resturant']; ?></p></br>
+<p class="card-data"><strong>Price: </strong><?php echo $row['price'];?></p></br>
+<p class="card-data"><strong>Type: </strong><?php echo $row['food_type']; ?></p>
+</br>
+
+</div>
+
+</div>
+</div>
+<?php } ?>
+<!-------------------------------->
+
+<!-- CARD 2-->
+<?php if($i == 2){ ?>
+
+<div class="row">
+<div class="card1">
+
+<div class="column image">
+<p>this portion is for image</p>
+</div>
+
+<div class="column content">
+
+<h1 class="card-head"><strong> <?php echo $row['item'];?></strong> </h1>
+
+<p class="card-data" ><strong>Resturant: </strong><?php  echo $row['resturant']; ?></p></br>
+<p class="card-data" ><strong>Price: </strong><?php echo $row['price'];?></p></br>
+<p class="card-data" ><strong>Type: </strong><?php echo $row['food_type']; ?></p>
+</br>
+
+</div>
+
+</div>
+</div>
+<?php } ?>
+<!-------------------------------->
+
+<!-- CARD 3-->
+<?php if($i == 3){ ?>
+
+<div class="row">
+<div class="card1">
+
+<div class="column image">
+<p>this portion is for image</p>
+</div>
+
+<div class="column content">
+
+<h1 class="card-head"> <strong><?php echo $row['item'];?></strong> </h1>
+
+<p class="card-data" ><strong>Resturant: </strong><?php  echo $row['resturant']; ?></p></br>
+<p class="card-data" ><strong>Price: </strong><?php echo $row['price'];?></p></br>
+<p class="card-data" ><strong>Type:</strong> <?php echo $row['food_type']; ?></p>
+</br>
+
+</div>
+
+</div>
+</div>
+<?php } ?>
+<!-------------------------------->
+
+<!-- CARD 4-->
+<?php if($i == 4){ ?>
+
+<div class="row">
+<div class="card1">
+
+<div class="column image">
+<p>this portion is for image</p>
+</div>
+
+<div class="column content">
+
+<h1 class="card-head"><strong> <?php echo $row['item'];?></strong> </h1>
+
+<p class="card-data"><strong>Resturant:</strong> <?php  echo $row['resturant']; ?></p></br>
+<p class="card-data"><strong>Price: </strong><?php echo $row['price'];?></p></br>
+<p class="card-data"><strong>Type:</strong> <?php echo $row['food_type']; ?></p>
+</br>
+
+</div>
+
+</div>
+</div>
+<?php } ?>
+<!-------------------------------->
+
+
+<?php } ?>
+</div>
+
+    
     </body>
     </html>
