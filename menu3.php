@@ -30,7 +30,22 @@ include("connection.php");
 <a href="" class="button button-accent button-small"><strong>Rate & Review</strong></a> </br>
 -->
 
-<p class="side-tag">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p class="side-tag">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</p>
+
+</br></br>
+        <h1>
+ <span class="text_3">Hungry?</span>
+<span class="text_2">Order food now! </span>
+</h1>
+</br></br>
+
+<p class="side-tag">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</p>
 
     </div>
 
@@ -67,11 +82,11 @@ include("connection.php");
 <div class="card1">
 
 <div class="column image">
-<p>this portion is for image</p>
+<img src="https://images.unsplash.com/photo-1578922794704-7bdd46f70ce0?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=350&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=400" alt="image">
 </div>
 
 <div class="column content">
-
+<a href="" class="button button-accent button-small"><strong>+</strong></a>
 <h1 class="card-head"> <strong><?php echo $row['item'];?></strong> </h1>
 
 <p class="card-data"><strong>Resturant: </strong><?php  echo $row['resturant']; ?></p></br>
@@ -93,11 +108,11 @@ include("connection.php");
 <div class="card1">
 
 <div class="column image">
-<p>this portion is for image</p>
+<img src="https://images.unsplash.com/photo-1559620192-032c4bc4674e?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=350&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=400" alt="image">
 </div>
 
 <div class="column content">
-
+<a href="" class="button button-accent button-small"><strong>+</strong></a>
 <h1 class="card-head"><strong> <?php echo $row['item'];?></strong> </h1>
 
 <p class="card-data" ><strong>Resturant: </strong><?php  echo $row['resturant']; ?></p></br>
@@ -119,11 +134,11 @@ include("connection.php");
 <div class="card1">
 
 <div class="column image">
-<p>this portion is for image</p>
+<img src="https://images.unsplash.com/photo-1464093515883-ec948246accb?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=350&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=400" alt="image">
 </div>
 
 <div class="column content">
-
+<a href="" class="button button-accent button-small"><strong>+</strong></a>
 <h1 class="card-head"> <strong><?php echo $row['item'];?></strong> </h1>
 
 <p class="card-data" ><strong>Resturant: </strong><?php  echo $row['resturant']; ?></p></br>
@@ -145,11 +160,11 @@ include("connection.php");
 <div class="card1">
 
 <div class="column image">
-<p>this portion is for image</p>
+<img src="https://images.unsplash.com/photo-1543738066-d1e2659d4317?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=350&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=400" alt="image">
 </div>
 
 <div class="column content">
-
+<a href="" class="button button-accent button-small"><strong>+</strong></a>
 <h1 class="card-head"><strong> <?php echo $row['item'];?></strong> </h1>
 
 <p class="card-data"><strong>Resturant:</strong> <?php  echo $row['resturant']; ?></p></br>
