@@ -1,6 +1,7 @@
 <?php 
 session_start();
 include("connection.php");
+include("addtoDB.php");
     $loggedUsername = $_SESSION['username'];
 ?>
 
@@ -86,7 +87,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </div>
 
 <div class="column content">
-<a href="" class="button button-accent button-small"><strong>+</strong></a>
+<form action="addtoDB.php" method="POST"><strong><input type="submit" name="add3a" class="button button-accent button-small" value="+"></strong></form>
 <h1 class="card-head"> <strong><?php echo $row['item'];?></strong> </h1>
 
 <p class="card-data"><strong>Resturant: </strong><?php  echo $row['resturant']; ?></p></br>
@@ -112,7 +113,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </div>
 
 <div class="column content">
-<a href="" class="button button-accent button-small"><strong>+</strong></a>
+<form action="addtoDB.php" method="POST"><strong><input type="submit" name="add3b" class="button button-accent button-small" value="+"></strong></form>
 <h1 class="card-head"><strong> <?php echo $row['item'];?></strong> </h1>
 
 <p class="card-data" ><strong>Resturant: </strong><?php  echo $row['resturant']; ?></p></br>
@@ -138,7 +139,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </div>
 
 <div class="column content">
-<a href="" class="button button-accent button-small"><strong>+</strong></a>
+<form action="addtoDB.php" method="POST"><strong><input type="submit" name="add3c" class="button button-accent button-small" value="+"></strong></form>
 <h1 class="card-head"> <strong><?php echo $row['item'];?></strong> </h1>
 
 <p class="card-data" ><strong>Resturant: </strong><?php  echo $row['resturant']; ?></p></br>
@@ -164,7 +165,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </div>
 
 <div class="column content">
-<a href="" class="button button-accent button-small"><strong>+</strong></a>
+<form action="addtoDB.php" method="POST"><strong><input type="submit" name="add3d" class="button button-accent button-small" value="+"></strong></form>
 <h1 class="card-head"><strong> <?php echo $row['item'];?></strong> </h1>
 
 <p class="card-data"><strong>Resturant:</strong> <?php  echo $row['resturant']; ?></p></br>

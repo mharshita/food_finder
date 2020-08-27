@@ -173,7 +173,9 @@ url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
     /*display: inline-block;*/
     cursor: pointer;
     float: right;
+    background: transparent;
     padding-right: 0.3em;
+    border: none;
 }
 
   button-small{
@@ -190,7 +192,7 @@ url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 .button-accent:hover,
 .button-accent:focus{
     /*background: #00ff6c;*/
-    color: #232323;
+    color: rgb(87, 133, 19);
 }
 
 @media(min-width: 60rem){
