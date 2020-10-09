@@ -142,7 +142,7 @@ if(isset($_POST['sign_up']))
                  <!--portfolio item 1-->
             <figure class="port-item">
 <a href="#popup">
-<img src="images/pic-1.JPG" alt="portfolio item" >
+<img src="images/pic-1.jpg" alt="portfolio item" >
 
 <figcaption class="port-desc">
     <p>Order Food Online</p>
@@ -154,7 +154,7 @@ if(isset($_POST['sign_up']))
 <!--portfolio item 2-->
 <figure class="port-item">
 <a href="#popup">
-<img src="images/pic-2.JPG" alt="portfolio item">
+<img src="images/pic-2.jpg" alt="portfolio item">
 
 <figcaption class="port-desc">
     <p>Go Out For A Meal</p>
@@ -166,7 +166,7 @@ if(isset($_POST['sign_up']))
 <!--portfolio item 3-->
 <figure class="port-item">
 <a href="#popup">
-<img src="images/pic-3.JPG" alt="portfolio item">
+<img src="images/pic-3.jpg" alt="portfolio item">
 
 <figcaption class="port-desc">
     <p>Nightlife And Clubs</p>
@@ -178,7 +178,7 @@ if(isset($_POST['sign_up']))
 <!--portfolio item 4-->
 <figure class="port-item">
 <a href="#popup">
-<img src="images/pic-4.JPG" alt="portfolio item">
+<img src="images/pic-4.jpg" alt="portfolio item">
 
 <figcaption class="port-desc">
     <p>Just Delivery</p>
@@ -190,7 +190,7 @@ if(isset($_POST['sign_up']))
 <!--portfolio item 5-->
 <figure class="port-item">
 <a href="#popup">
-<img src="images/pic-5.JPG" alt="portfolio item">
+<img src="images/pic-5.jpg" alt="portfolio item">
 
 <figcaption class="port-desc">
     <p>Late Night Delivery</p>
@@ -202,7 +202,7 @@ if(isset($_POST['sign_up']))
 <!--portfolio item 6-->
 <figure class="port-item">
 <a href="#popup">
-<img src="images/pic-6.JPEG" alt="portfolio item">
+<img src="images/pic-6.jpeg" alt="portfolio item">
 
 <figcaption class="port-desc">
     <p>Takeaway And Delivery</p>
