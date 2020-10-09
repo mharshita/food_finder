@@ -4,161 +4,193 @@ include("connection.php");
 
     if(isset($_POST['add1a']))
     {
-        $item = ("SELECT item from menu WHERE id = '1' ");
-        $resturant = ("SELECT resturant from menu WHERE id = '1' ");
-        $price = ("SELECT price from menu where id = '1' ");
+        $num = 1;
+        $item = ("SELECT item from menu WHERE id = '$num' ");
+        $resturant = ("SELECT resturant from menu WHERE id = '$num' ");
+        $price = ("SELECT price from menu where id = '$num' ");
 
         $q = "insert into orders(item, resturant, price) values ('$item', '$resturant', '$price')";
         $result = mysqli_query($con, $q);
+        header("location: cart.php");
     }
 
-    if(isset($_POST['add1b']))
+    else if(isset($_POST['add1b']))
     {
-        $item = ("SELECT item from menu WHERE id = '2' ");
-        $resturant = ("SELECT resturant from menu WHERE id = '2' ");
-        $price = ("SELECT price from menu where id = '2' ");
+        $num = 2;
+        $item = ("SELECT item from menu WHERE id = '$num' ");
+        $resturant = ("SELECT resturant from menu WHERE id = '$num' ");
+        $price = ("SELECT price from menu where id = '$num' ");
 
         $q = "insert into orders(item, resturant, price) values ('$item', '$resturant', '$price')";
         $result = mysqli_query($con, $q);
+        header("location: cart.php");
     }
 
-    if(isset($_POST['add1c']))
+    else if(isset($_POST['add1c']))
     {
-        $item = ("SELECT item from menu WHERE id = '3' ");
-        $resturant = ("SELECT resturant from menu WHERE id = '3' ");
-        $price = ("SELECT price from menu where id = '3' ");
+        $num = 3;
+        $item = ("SELECT item from menu WHERE id = '$num' ");
+        $resturant = ("SELECT resturant from menu WHERE id = '$num' ");
+        $price = ("SELECT price from menu where id = '$num' ");
 
         $q = "insert into orders(item, resturant, price) values ('$item', '$resturant', '$price')";
         $result = mysqli_query($con, $q);
+        header("location: cart.php");
     }
 
-    if(isset($_POST['add1d']))
+    else if(isset($_POST['add1d']))
     {
-        $item = ("SELECT item from menu WHERE id = '4' ");
-        $resturant = ("SELECT resturant from menu WHERE id = '4' ");
-        $price = ("SELECT price from menu where id = '4' ");
+        $num = 4;
+        $item = ("SELECT item from menu WHERE id = '$num' ");
+        $resturant = ("SELECT resturant from menu WHERE id = '$num' ");
+        $price = ("SELECT price from menu where id = '$num' ");
 
         $q = "insert into orders(item, resturant, price) values ('$item', '$resturant', '$price')";
         $result = mysqli_query($con, $q);
+        header("location: cart.php");
     }
 
-    if(isset($_POST['add2a']))
+    else if(isset($_POST['add2a']))
     {
-        $item = ("SELECT item from menu WHERE id = '5' ");
-        $resturant = ("SELECT resturant from menu WHERE id = '5' ");
-        $price = ("SELECT price from menu where id = '5' ");
+        $num = 5;
+        $item = ("SELECT item from menu WHERE id = '$num' ");
+        $resturant = ("SELECT resturant from menu WHERE id = '$num' ");
+        $price = ("SELECT price from menu where id = '$num' ");
 
         $q = "insert into orders(item, resturant, price) values ('$item', '$resturant', '$price')";
         $result = mysqli_query($con, $q);
+        header("location: cart.php");
     }
 
-    if(isset($_POST['add2b']))
+    else if(isset($_POST['add2b']))
     {
-        $item = ("SELECT item from menu WHERE id = '6' ");
-        $resturant = ("SELECT resturant from menu WHERE id = '6' ");
-        $price = ("SELECT price from menu where id = '6' ");
+        $num = 6;
+        $item = ("SELECT item from menu WHERE id = '$num' ");
+        $resturant = ("SELECT resturant from menu WHERE id = '$num' ");
+        $price = ("SELECT price from menu where id = '$num' ");
 
         $q = "insert into orders(item, resturant, price) values ('$item', '$resturant', '$price')";
         $result = mysqli_query($con, $q);
+        header("location: cart.php");
     }
 
-    if(isset($_POST['add2c']))
+    else if(isset($_POST['add2c']))
     {
-        $item = ("SELECT item from menu WHERE id = '7' ");
-        $resturant = ("SELECT resturant from menu WHERE id = '7' ");
-        $price = ("SELECT price from menu where id = '7' ");
+        $num = 7;
+        $item = ("SELECT item from menu WHERE id = '$num' ");
+        $resturant = ("SELECT resturant from menu WHERE id = '$num' ");
+        $price = ("SELECT price from menu where id = '$num' ");
 
         $q = "insert into orders(item, resturant, price) values ('$item', '$resturant', '$price')";
         $result = mysqli_query($con, $q);
+        header("location: cart.php");
     }
 
-    if(isset($_POST['add2d']))
+    else if(isset($_POST['add2d']))
     {
-        $item = ("SELECT item from menu WHERE id = '8' ");
-        $resturant = ("SELECT resturant from menu WHERE id = '8' ");
-        $price = ("SELECT price from menu where id = '8' ");
+        $num = 8;
+        $item = ("SELECT item from menu WHERE id = '$num' ");
+        $resturant = ("SELECT resturant from menu WHERE id = '$num' ");
+        $price = ("SELECT price from menu where id = '$num' ");
 
         $q = "insert into orders(item, resturant, price) values ('$item', '$resturant', '$price')";
         $result = mysqli_query($con, $q);
+        header("location: cart.php");
     }
 
-    if(isset($_POST['add3a']))
+    else if(isset($_POST['add3a']))
     {
-        $item = ("SELECT item from menu WHERE id = '9' ");
-        $resturant = ("SELECT resturant from menu WHERE id = '9' ");
-        $price = ("SELECT price from menu where id = '9' ");
+        $num = 9;
+        $item = ("SELECT item from menu WHERE id = '$num' ");
+        $resturant = ("SELECT resturant from menu WHERE id = '$num' ");
+        $price = ("SELECT price from menu where id = '$num' ");
 
         $q = "insert into orders(item, resturant, price) values ('$item', '$resturant', '$price')";
         $result = mysqli_query($con, $q);
+        header("location: cart.php");
     }
 
-    if(isset($_POST['add3b']))
+    else if(isset($_POST['add3b']))
     {
-        $item = ("SELECT item from menu WHERE id = '10' ");
-        $resturant = ("SELECT resturant from menu WHERE id = '10' ");
-        $price = ("SELECT price from menu where id = '10' ");
+        $num = 10;
+        $item = ("SELECT item from menu WHERE id = '$num' ");
+        $resturant = ("SELECT resturant from menu WHERE id = '$num' ");
+        $price = ("SELECT price from menu where id = '$num' ");
 
         $q = "insert into orders(item, resturant, price) values ('$item', '$resturant', '$price')";
         $result = mysqli_query($con, $q);
+        header("location: cart.php");
     }
 
-    if(isset($_POST['add3c']))
+    else if(isset($_POST['add3c']))
     {
-        $item = ("SELECT item from menu WHERE id = '11' ");
-        $resturant = ("SELECT resturant from menu WHERE id = '11' ");
-        $price = ("SELECT price from menu where id = '11' ");
+        $num = 11;
+        $item = ("SELECT item from menu WHERE id = '$num' ");
+        $resturant = ("SELECT resturant from menu WHERE id = '$num' ");
+        $price = ("SELECT price from menu where id = '$num' ");
 
         $q = "insert into orders(item, resturant, price) values ('$item', '$resturant', '$price')";
         $result = mysqli_query($con, $q);
+        header("location: cart.php");
     }
 
-    if(isset($_POST['add3d']))
+    else if(isset($_POST['add3d']))
     {
-        $item = ("SELECT item from menu WHERE id = '12' ");
-        $resturant = ("SELECT resturant from menu WHERE id = '12' ");
-        $price = ("SELECT price from menu where id = '12' ");
+        $num = 12;
+        $item = ("SELECT item from menu WHERE id = '$num' ");
+        $resturant = ("SELECT resturant from menu WHERE id = '$num' ");
+        $price = ("SELECT price from menu where id = '$num' ");
 
         $q = "insert into orders(item, resturant, price) values ('$item', '$resturant', '$price')";
         $result = mysqli_query($con, $q);
+        header("location: cart.php");
     }
 
-    if(isset($_POST['add4a']))
+    else if(isset($_POST['add4a']))
     {
-        $item = ("SELECT item from menu WHERE id = '13' ");
-        $resturant = ("SELECT resturant from menu WHERE id = '13' ");
-        $price = ("SELECT price from menu where id = '13' ");
+        $num = 13;
+        $item = ("SELECT item from menu WHERE id = '$num' ");
+        $resturant = ("SELECT resturant from menu WHERE id = '$num' ");
+        $price = ("SELECT price from menu where id = '$num' ");
 
         $q = "insert into orders(item, resturant, price) values ('$item', '$resturant', '$price')";
         $result = mysqli_query($con, $q);
+        header("location: cart.php");
     }
 
-    if(isset($_POST['add4b']))
+    else if(isset($_POST['add4b']))
     {
-        $item = ("SELECT item from menu WHERE id = '14' ");
-        $resturant = ("SELECT resturant from menu WHERE id = '14' ");
-        $price = ("SELECT price from menu where id = '14' ");
+        $num = 14;
+        $item = ("SELECT item from menu WHERE id = '$num' ");
+        $resturant = ("SELECT resturant from menu WHERE id = '$num' ");
+        $price = ("SELECT price from menu where id = '$num' ");
 
         $q = "insert into orders(item, resturant, price) values ('$item', '$resturant', '$price')";
         $result = mysqli_query($con, $q);
+        header("location: cart.php");
     }
 
-    if(isset($_POST['add4c']))
+    else if(isset($_POST['add4c']))
     {
-        $item = ("SELECT item from menu WHERE id = '15' ");
-        $resturant = ("SELECT resturant from menu WHERE id = '15' ");
-        $price = ("SELECT price from menu where id = '15' ");
+        $num = 15;
+        $item = ("SELECT item from menu WHERE id = '$num' ");
+        $resturant = ("SELECT resturant from menu WHERE id = '$num' ");
+        $price = ("SELECT price from menu where id = '$num' ");
 
         $q = "insert into orders(item, resturant, price) values ('$item', '$resturant', '$price')";
         $result = mysqli_query($con, $q);
+        header("location: cart.php");
     }
 
-    if(isset($_POST['add4d']))
+    else if(isset($_POST['add4d']))
     {
-        $item = ("SELECT item from menu WHERE id = '16' ");
-        $resturant = ("SELECT resturant from menu WHERE id = '16' ");
-        $price = ("SELECT price from menu where id = '16' ");
+        $num = 16;
+        $item = ("SELECT item from menu WHERE id = '$num' ");
+        $resturant = ("SELECT resturant from menu WHERE id = '$num' ");
+        $price = ("SELECT price from menu where id = '$num' ");
 
         $q = "insert into orders(item, resturant, price) values ('$item', '$resturant', '$price')";
         $result = mysqli_query($con, $q);
+        header("location: cart.php");
     }
 ?>

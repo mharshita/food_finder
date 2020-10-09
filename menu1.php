@@ -87,7 +87,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </div>
 
 <div class="column content">
-<form action="cart.php" method="POST"><strong><input type="submit" name="add1a" class="button button-accent button-small" value="+" /></strong></form>
+<form action="" method="POST">
+<input type="hidden" name="m1a">
+<input type="submit" name="add1a" class="button button-accent button-small" value="+" />
+</form>
 <h1 class="card-head"> <strong><?php echo $row['item'];?></strong> </h1>
 
 <p class="card-data"><strong>Resturant: </strong><?php  echo $row['resturant']; ?></p></br>
@@ -114,7 +117,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </div>
 
 <div class="column content">
-<form action="cart.php" method="POST"><strong><input type="submit" name="add1b" class="button button-accent button-small" value="+"></strong></form>
+<form action="" method="POST">
+<input type="hidden" name="m1b">
+<input type="submit" name="add1b" class="button button-accent button-small" value="+">
+</form>
 <h1 class="card-head"><strong> <?php echo $row['item'];?></strong> </h1>
 
 <p class="card-data" ><strong>Resturant: </strong><?php  echo $row['resturant']; ?></p></br>
@@ -141,7 +147,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </div>
 
 <div class="column content">
-<form action="cart.php" method="POST"><strong><input type="submit" name="add1c" class="button button-accent button-small" value="+"></strong></form>
+<form action="" method="POST">
+<input type="hidden" name="m1c">
+<input type="submit" name="add1c" class="button button-accent button-small" value="+">
+</form>
 <h1 class="card-head"> <strong><?php echo $row['item'];?></strong> </h1>
 <p class="card-data" ><strong>Resturant: </strong><?php  echo $row['resturant']; ?></p></br>
 <p class="card-data" ><strong>Price: </strong><?php echo $row['price'];?></p></br>
@@ -166,7 +175,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </div>
 
 <div class="column content">
-<form action="cart.php" method="POST"><strong><input type="submit" name="add1d" class="button button-accent button-small" value="+"></strong></form>
+<form action="" method="POST">
+<input type="hidden" name="m1d">
+<input type="submit" name="add1d" class="button button-accent button-small" value="+">
+</form>
 <h1 class="card-head"><strong> <?php echo $row['item'];?></strong> </h1>
 
 <p class="card-data"><strong>Resturant:</strong> <?php  echo $row['resturant']; ?></p></br>

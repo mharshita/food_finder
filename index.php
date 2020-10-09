@@ -126,7 +126,7 @@ if(isset($_POST['sign_up']))
 
         <section class="index-first">
             <div class="container">
-                <h1 class="title">THE FOOD FINDER</br>
+                <h1 class="title">FOOD FINDER</br>
                     <span id="cursive"><em>delivering the best food at your doorstep</em></span>
                 </h1>
             </div>

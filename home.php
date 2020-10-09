@@ -51,16 +51,15 @@ include("connection.php");
 <div class="portfolio">
 
 <div class="card filterDiv veg">
-  <img src="css/indian-food.JPG" alt="Resturant 1" style="width:100%">
+  <img src="https://images.unsplash.com/photo-1565895405227-31cffbe0cf86?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=350&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=400" alt="Resturant 1" style="width:100%; height: 101.5%">
   <h1>Restaurant 1</h1>
   <p class="price">Veg</br>Delivery Time: 30 minutes</p>
   <p style="font-weight: bold"> Lorem ipsum dolor sit amet</p>
   <form action="menu1.php" method="POST"><input type="submit" class="button" name="Resturant 1" value="SHOW MENU"></form>
-  <!--<button href="menu.php" class="button">SHOW MENU</button> -->
 </div>
 
 <div class="card filterDiv veg">
-  <img src="images/pic-2.JPG" alt="Resturant 2" style="width:100%; height: 101.5%">
+  <img src="https://images.unsplash.com/photo-1579711220373-155ffc441b36?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=350&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=400" alt="Resturant 2" style="width:100%; height: 101.5%">
   <h1>Restaurant 2</h1>
   <p class="price">Veg</br>Delivery Time: 45 minutes</p>
   <p style="font-weight: bold"> Lorem ipsum dolor sit amet</p>
@@ -68,7 +67,7 @@ include("connection.php");
 </div>
 
 <div class="card1 filterDiv non_veg">
-  <img src="images/pic-3.JPG" alt="Resturant 3" style="width:100%; height: 101.5%">
+  <img src="https://images.unsplash.com/photo-1578922794704-7bdd46f70ce0?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=350&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=400" alt="Resturant 3" style="width:100%; height: 101.5%">
   <h1>Restaurant 3</h1>
   <p class="price">Non-Veg</br>Delivery Time: 40 minutes</p>
   <p style="font-weight: bold"> Lorem ipsum dolor sit amet</p>
@@ -76,7 +75,7 @@ include("connection.php");
 </div>
 
 <div class="card1 filterDiv non_veg">
-  <img src="images/pic-6.JPEG" alt="Denim Jeans" style="width:100%; height: 101.5%">
+  <img src="https://images.unsplash.com/photo-1556178675-eb094aaa8447?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=350&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=400" alt="Denim Jeans" style="width:100%; height: 101.5%">
   <h1>Restaurant 4</h1>
   <p class="price">Non-Veg</br>Delivery Time: 35 minutes</p>
   <p style="font-weight: bold"> Lorem ipsum dolor sit amet</p>

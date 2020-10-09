@@ -176,6 +176,8 @@ url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
     background: transparent;
     padding-right: 0.3em;
     border: none;
+    outline: none;
+    font-weight: bold;
 }
 
   button-small{
