@@ -74,3 +74,63 @@
     .list{
         margin-left: 20em;
     }
+
+    .delete{
+        font-size:26px;
+        color: red;
+        text-decoration: none;
+    }
+
+    .list-item{
+        font-size: 26px;
+    }
+
+    /*---------button----------------*/
+
+    .button{
+        /*font-size: 1.5rem;*/
+        text-decoration: none;
+        text-transform: uppercase;
+        border-width: 2px;
+        border-style: solid;
+        padding: 0.5em 1.5em;
+        display: inline-block;
+        cursor: pointer;
+        font-weight: bold;
+        box-shadow: 5px 10px 5px grey;
+        /* display: block; */
+        width: 20em;
+        margin-top: 2em;
+        /* vertical-align: bottom; */
+    }
+    
+      button-small{
+        font-size: 0.5rem;
+        /* font-weight: 700; */
+    }
+    
+    .button-accent{
+        color: /*#42b924*/ white;
+        border-color: /*#00ff6c*/ black;
+        background-color: black;
+    }
+    
+    .button-accent:hover,
+    .button-accent:focus{
+        background: #00ff6c;
+        color: #232323;
+        border-color: #00ff6c;
+    }
+    
+    @media(min-width: 60rem){
+       .button{
+           font-size: 1.2rem;
+       }
+    }
+
+    /*------------------------------------------------------------------*/
+
+    /* footer{ */
+        /* position: sticky; */
+        /* margin-top: 30em; */
+    /* } */

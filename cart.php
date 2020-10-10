@@ -32,8 +32,8 @@ include("connection.php");
 <div class="list">
 <table id = "container">
     <tr>
+        <td class="h">Restaurant</td>
         <td class="h">Item</td>
-        <td class="h">Resturant</td>
         <td class="h">Price</td>
         <td class="h">Remove Item</td>
     </tr>
@@ -49,13 +49,18 @@ include("connection.php");
     ?>
 
     <tr>
-        <td><?php echo $row['item']; ?></td>
-        <td><?php echo $row['resturant']; ?></td>
-        <td><?php echo $row['price']; ?></td>
-        <td><a href="cart.php?delete=<?php echo $row['id'] ?>" id="delete" style="font-size:26px;">REMOVE</a></td>
+        <td class="list-item"><?php echo $row['item']; ?></td>
+        <td class="list-item"><?php echo $row['resturant']; ?></td>
+        <td class="list-item" id="price"><?php echo $row['price']; ?></td>
+        <td class="list-item"><a href="cart.php?delete=<?php echo $row['id'] ?>" id="delete" class="delete">REMOVE</a></td>
     </tr>
+    <?php } ?>
 </table>
-        </div>
-        <?php } ?>
+</div>
+
+<form method="POST" action="final.php">
+<input type="hidden" name="hidden">
+    <input type="submit" name="final" class="button button-accent button-small" value="ORDER NOW" />
+    </form>
 </body>
 </html>

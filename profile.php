@@ -11,6 +11,15 @@ include("connection.php");
         $sql = "UPDATE user SET e_mail = '$e_mail', password = '$password' ";
         $result = mysqli_query($con, $sql);
     }
+
+    if(isset($_POST['rateReview']))
+    {
+        $rate = $_POST['rate'];
+        $review = $_POST['review'];
+
+        $sql = "INSERT INTO reviews (username, rating, review) values ('$loggedUsername', '$rate', '$review')";
+        $result = mysqli_query($con, $sql);
+    }
 ?> 
 
 <!DOCTYPE html>
@@ -35,7 +44,7 @@ include("connection.php");
 </br></br>
 <a href="home.php" class="button button-accent button-small"><strong>Order Now</strong></a>
 </br></br>
-<a href="" class="button button-accent button-small"><strong>Rate & Review</strong></a> </br>
+<a href="#review" class="button button-accent button-small"><strong>Rate & Review</strong></a> </br>
 
     </div>
     <div class="column main-page">
@@ -47,7 +56,19 @@ include("connection.php");
             <ul>
            
                 <li><a href="logout.php" class="nav-li">LOGOUT</a></li>
+                <?php 
+                  $query = "SELECT item FROM orders WHERE id = 1";
+                  $result = mysqli_query($con, $query);
+                  $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+                  if(isset($row['item'])){ 
+                ?>
                 <li><a href="cart.php" class="nav-li">CART</a></li>
+                    <?php 
+                  }
+                  else{ 
+                    ?>
+                    <li><a href="empty_cart.php" class="nav-li">CART</a></li>
+                  <?php } ?>
                 <li><a href="home.php" class="nav-li">HOME</a></li>
               
             </ul>
@@ -82,7 +103,7 @@ include("connection.php");
         </table>
         </br></br>
         <a href="#edit" class="button button-accent button-small"><strong>Edit Details</strong></a>
-        <a href="" class="button button-accent button-small"><strong>Show Previous Reviews</strong></a>
+        <a href="#showReview" class="button button-accent button-small"><strong>Show Previous Reviews</strong></a>
     </div>
 </div>
 
@@ -109,6 +130,67 @@ include("connection.php");
                         </table>
 
                     </form>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div id="review" class="overlay">
+            <div class="popup">
+                <h2>Rate and Review</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    
+                    <form action="" method="POST">
+                        <table>
+                            <tr class="popup-tr">
+                                <td class="popup-td">Rate</td>
+                                <td class="popup-td"><input type="number" name="rate" id="inputRate"></td>
+                            </tr>
+                            <tr class="popup-tr">
+                                <td class="popup-td">Review</td>
+                                <td class="popup-td"><input type="text" name="review" id="inputReview" style="height: 6em"></td>
+                            </tr>
+                            <tr class="popup-tr">
+                                <td></td>
+                                <td class="popup-td" style="float: right;"><input type="submit" name="rateReview" value="SUBMIT" class="button button-accent button-small"></td>
+                            </tr>
+                        </table>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div id="showReview" class="overlay">
+            <div class="popup">
+                <h2>Previous Ratings and Reviews</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    
+                        <table>
+                            <tr class="popup-tr" style="margin-left: 3.5em; display: block">
+                                <td class="popup-td" style="font-size: 1.3em">Rate</td>
+                                <td class="popup-td" style="font-size: 1.3em">Review</td>
+                            </tr>
+                            <?php
+                                $q = ("SELECT rating, review  FROM reviews WHERE username = '$loggedUsername' ");
+                                $res = mysqli_query($con, $q);
+                                $num = mysqli_num_rows($res);
+
+                                for($i = 1; $i <= $num; $i++)
+                                {
+                                    $row = mysqli_fetch_array($res);  
+                            ?>
+                            <tr class="popup-tr">
+                                <td class="popup-td"><?php echo $row['rating']; ?></td>
+                                <td class="popup-td"><?php echo $row['review']; ?></td>
+                            </tr>
+                                <?php } ?>
+                        </table>
 
                 </div>
             </div>

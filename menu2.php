@@ -56,7 +56,19 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
     <ul>
         <li><a href="logout.php" class="nav-li">LOGOUT</a></li>
-        <li><a href="cart.php" class="nav-li">CART</a></li>
+        <?php 
+                  $query = "SELECT item FROM orders WHERE id = 1";
+                  $result = mysqli_query($con, $query);
+                  $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+                  if(isset($row['item'])){ 
+                ?>
+                <li><a href="cart.php" class="nav-li">CART</a></li>
+                    <?php 
+                  }
+                  else{ 
+                    ?>
+                    <li><a href="empty_cart.php" class="nav-li">CART</a></li>
+                  <?php } ?>
         <li><a href="profile.php" class="nav-li">PROFILE</a></li>
         <li><a href="home.php" class="nav-li">HOME</a></li>
     </ul>
